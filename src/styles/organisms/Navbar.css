@@ -1,0 +1,46 @@
+/* navbar: fondo transparente, sin sombra inicial */
+.navbar {
+  background-color: transparent !important;
+  padding: 1rem 2rem !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* nav-links: color oscuro, espaciado y fuente */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+/* hover: color azul claro */
+.navbar .nav-link:hover {
+  color: #007bff !important;
+}
+
+/* toggle button sin borde para fondo transparente */
+.navbar-toggler {
+  border: none !important;
+}
+
+/* icono toggle invertido para que se vea oscuro */
+.navbar-toggler-icon {
+  filter: invert(0.4) !important;
+}
+
+.navbar-nav{
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* para centrar el menú en pantallas grandes si quieres */
+.navbar .me-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

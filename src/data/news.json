@@ -1,0 +1,13 @@
+
+[
+  {
+    "titulo": "Noticia 1",
+    "fecha": "2023-10-01",
+    "contenido": "Lanzamiento de nuevo framework."
+  },
+  {
+    "titulo": "Noticia 2",
+    "fecha": "2023-10-05",
+    "contenido": "Actualización en React 18."
+  }
+]
