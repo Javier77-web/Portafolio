@@ -4,7 +4,7 @@ import '../../styles/components/organisms/Navbar.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 function NavBar ()  {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="transparent" variant="light" expand="lg">
      <Container>
        <Navbar.Brand href="/"></Navbar.Brand> 
        <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -13,6 +13,7 @@ function NavBar ()  {
            <Nav.Link href="/">Inicio</Nav.Link>
            <Nav.Link href="/About">Acerca de Mi</Nav.Link>
            <Nav.Link href="/Projects">Proyectos</Nav.Link>
+           <Nav.Link href="/News">Noticias</Nav.Link>
            <Nav.Link href="/Contact">Contacto</Nav.Link>
          </Nav>
        </Navbar.Collapse>

@@ -1,15 +1,30 @@
 // src/pages/Home.jsx
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from 'react'; // importar react para crear el componente
+import '../styles/pages/Home.css'; // importar estilos css específicos para esta página
+import miFoto from '../assets/fore.webp'; // importar la imagen en formato webp (puede ser jpg o webp)
 
 function Home() {
-    return (
-      <Container className="my-5">
-        <h1>Página de inicio</h1>
-        <p>Bienvenidos a nuestro sitio web.</p>
+  return (
+    <div className="home-fondo"> {/* contenedor principal con fondo negro */}
+      <div className="home-container"> {/* contenedor para limitar ancho y centrar contenido */}
+        <div className="htexto-imagen"> {/* contenedor que agrupa texto e imagen */}
+          <div className="htexto"> {/* contenedor para el texto */}
+            <h2 className="hola">Hola, soy</h2> {/* subtítulo h2 arriba */}
+            <h1 className="nombre">Javier <span className="apellido">Nilo</span></h1> {/* título h1 con span para resaltar "nilo" */}
+            <p className='parrafo'>Ingeniero En Informática</p>
+          </div>
+          <div className="home-image-container"> {/* contenedor para la imagen */}
+            <img 
+              src={miFoto} 
+              alt="foto de javier nilo" 
+              className="home-image" 
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-      </Container>
-    );
-   }
-   
-export default Home;
+export default Home; // exportar el componente para usarlo en otras partes
+

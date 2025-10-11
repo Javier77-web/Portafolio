@@ -1,0 +1,115 @@
+/* fondo general de la sección */
+.home-fondo {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* contenedor centrado con ancho limitado */
+.home-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* layout de texto + imagen */
+.htexto-imagen {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* para que en móvil se acomoden en columna */
+}
+
+/* contenedor de texto */
+.htexto {
+  flex: 1 1 300px;
+}
+
+/* saludo */
+.hola {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: #ccc;
+}
+
+/* nombre principal */
+.nombre {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+/* apellido con color diferente */
+.apellido {
+  color: #00bcd4;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.parrafo {
+    font-size: 1.5rem;
+}
+
+
+/* contenedor de imagen */
+.home-image-container {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+
+.home-image {
+  width: auto;            /* ancho natural */
+  max-width: 300px;       /* evita que sea muy grande */
+  height: auto;           /* alto automático, mantiene proporción */
+  border-radius: 0;            /* sin bordes redondeados */
+  background-color: transparent; /* fondo transparente */
+  filter: drop-shadow(0 0 10px #00bcd4); /* sombra suave que sigue la forma visible */
+}
+
+
+
+
+/* responsive para tablets y móviles */
+@media (max-width: 768px) {
+  .htexto-imagen {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image-container {
+    margin-top: 2rem;
+  }
+
+  .nombre {
+    font-size: 2.5rem;
+  }
+
+  .hola {
+    font-size: 1.3rem;
+  }
+
+  .home-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nombre {
+    font-size: 2rem;
+  }
+
+  .hola {
+    font-size: 1.1rem;
+  }
+
+  .home-image {
+    width: 150px;
+    height: 150px;
+  }
+}
