@@ -1,28 +1,19 @@
 // src/pages/Home.jsx
-import React from 'react'; // importar react para crear el componente
-import '../styles/pages/Home.css'; // importar estilos css específicos para esta página
-import miFoto from '../assets/fore.webp'; // importar la imagen en formato webp (puede ser jpg o webp)
+// src/pages/Home.jsx
+import React from 'react'; // importar react
+import Home1 from '../components/sections/Home1'; // importar sección hero (presentación)
+import About from '../components/sections/About'; // importar sección acerca de mí
+import Projects from '../components/sections/Projects'; // importar sección de proyectos
+import Contact from '../components/sections/Contact'; // importar sección de contacto
 
 function Home() {
   return (
-    <div className="home-fondo"> {/* contenedor principal con fondo negro */}
-      <div className="home-container"> {/* contenedor para limitar ancho y centrar contenido */}
-        <div className="htexto-imagen"> {/* contenedor que agrupa texto e imagen */}
-          <div className="htexto"> {/* contenedor para el texto */}
-            <h2 className="hola">Hola, soy</h2> {/* subtítulo h2 arriba */}
-            <h1 className="nombre">Javier <span className="apellido">Nilo</span></h1> {/* título h1 con span para resaltar "nilo" */}
-            <p className='parrafo'>Ingeniero En Informática</p>
-          </div>
-          <div className="home-image-container"> {/* contenedor para la imagen */}
-            <img 
-              src={miFoto} 
-              alt="foto de javier nilo" 
-              className="home-image" 
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <Home1 />       {/* sección de bienvenida con tu foto */}
+      <About />      {/* sección acerca de ti */}
+      <Projects />   {/* sección de proyectos */}
+      <Contact />    {/* sección de contacto */}
+    </>
   );
 }
 
