@@ -1,17 +1,26 @@
-
 [
   {
+    "id": 1,
     "titulo": "Proyecto 1",
     "descripcion": "Una app web simple",
     "tecnologias": ["React", "Bootstrap"],
-    "imagen": "proyecto1.jpg",
+    "imagen": "andro.jpg",
     "enlace": "https://github.com/tu-usuario/proyecto1"
   },
   {
+    "id": 2,
     "titulo": "Proyecto 2",
     "descripcion": "Un juego interactivo",
     "tecnologias": ["JavaScript", "Canvas"],
-    "imagen": "proyecto2.jpg",
+    "imagen": "andro.jpg",
     "enlace": "https://github.com/tu-usuario/proyecto2"
+  },
+  {
+    "id": 3,
+    "titulo": "Proyecto 3",
+    "descripcion": "Sitio de e‑commerce",
+    "tecnologias": ["React", "Node.js", "MongoDB"],
+    "imagen": "andro.jpg",
+    "enlace": "https://github.com/tu-usuario/proyecto3"
   }
 ]

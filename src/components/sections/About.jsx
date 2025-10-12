@@ -8,9 +8,19 @@ import cssIcon from '../../assets/icons/css.png';
 import jsIcon from '../../assets/icons/js.png';
 import reactIcon from '../../assets/icons/react.png';
 import nodeIcon from '../../assets/icons/node.png';
-import mongoIcon from '../../assets/icons/mongodb.png';
+import mongoIcon from '../../assets/icons/postgr.png';
 import mysqlIcon from '../../assets/icons/mysql.png';
 import awsIcon from '../../assets/icons/aws.png';
+import andIcon from '../../assets/icons/andro.png';
+import apaIcon from '../../assets/icons/apa.png';
+import figIcon from '../../assets/icons/fig.png';
+import bootIcon from '../../assets/icons/boot.png';
+import gitIcon from '../../assets/icons/git.png';
+import javaIcon from '../../assets/icons/java.png';
+import pycon from '../../assets/icons/py.png';
+import spinIcon from '../../assets/icons/spring.png';
+import vscIcon from '../../assets/icons/vsc.png';
+import wpIcon from '../../assets/icons/word.png';
 
 function About() {
   return (
@@ -33,6 +43,16 @@ function About() {
           <img src={mongoIcon} alt="MongoDB" />
           <img src={mysqlIcon} alt="MySQL" />
           <img src={awsIcon} alt="AWS" />
+          <img src={andIcon} alt="ANDROID" />
+          <img src={apaIcon} alt="APACHE" />
+          <img src={figIcon} alt="FIGMA" />
+          <img src={bootIcon} alt="BOOTSTRAP" />
+          <img src={gitIcon} alt="GITHUB" />
+          <img src={javaIcon} alt="JAVA" />
+          <img src={pycon} alt="PYTHON" />
+          <img src={spinIcon} alt="SPRIN-BOOT" />
+          <img src={vscIcon} alt="VSC" />
+          <img src={wpIcon} alt="WORD-PRESS" />
         </div>
       </div>
     </section>

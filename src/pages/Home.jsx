@@ -5,6 +5,7 @@ import Home1 from '../components/sections/Home1'; // importar sección hero (pre
 import About from '../components/sections/About'; // importar sección acerca de mí
 import Projects from '../components/sections/Projects'; // importar sección de proyectos
 import Contact from '../components/sections/Contact'; // importar sección de contacto
+import News from '../components/sections/News';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Home1 />       {/* sección de bienvenida con tu foto */}
       <About />      {/* sección acerca de ti */}
       <Projects />   {/* sección de proyectos */}
+      <News />   {/* sección de proyectos */}
       <Contact />    {/* sección de contacto */}
     </>
   );
