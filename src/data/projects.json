@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "titulo": "Proyecto 1",
-    "descripcion": "Una app web simple",
-    "tecnologias": ["React", "Bootstrap"],
-    "imagen": "andro.jpg",
-    "enlace": "https://github.com/tu-usuario/proyecto1"
+    "titulo": "Fundacion Apoyo",
+    "descripcion": "Pagina web para gestionar y administra una fundacionde adutltos mayores",
+    "tecnologias": ["html", "css","js"],
+    "imagen": "projects/pro1.jpg",
+    "enlace": "https://github.com/Javier77-web/Fundacion"
   },
   {
     "id": 2,
-    "titulo": "Proyecto 2",
-    "descripcion": "Un juego interactivo",
-    "tecnologias": ["JavaScript", "Canvas"],
-    "imagen": "andro.jpg",
-    "enlace": "https://github.com/tu-usuario/proyecto2"
+    "titulo": "TeloConvierto",
+    "descripcion": "api para gestion de una aplicacion la cual es un convertidor de archivos",
+    "tecnologias": ["sprin boot", "java","xamp","mysql","postman"],
+    "imagen": "projects/pro1.jpg",
+    "enlace": "https://github.com/Javier77-web/EVA2"
   },
   {
     "id": 3,
-    "titulo": "Proyecto 3",
+    "titulo": "MonsterTeka",
     "descripcion": "Sitio de e‑commerce",
-    "tecnologias": ["React", "Node.js", "MongoDB"],
-    "imagen": "andro.jpg",
-    "enlace": "https://github.com/tu-usuario/proyecto3"
+    "tecnologias": ["html", "css", "js"],
+    "imagen": "projects/pro1.jpg",
+    "enlace": "https://github.com/Javier77-web/full2"
   }
 ]

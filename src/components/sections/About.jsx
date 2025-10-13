@@ -1,8 +1,10 @@
 // src/components/sections/About.jsx
-import React from 'react';
-import '../../styles/sections/About.css'; // importar los estilos
 
-// si tienes imágenes de logos, las puedes importar aquí
+import React from 'react';
+import '../../styles/sections/About.css'; // estilos globales de la sección
+import Icon from '../atoms/icons';
+
+// importar íconos desde assets
 import htmlIcon from '../../assets/icons/htm.png';
 import cssIcon from '../../assets/icons/css.png';
 import jsIcon from '../../assets/icons/js.png';
@@ -34,25 +36,26 @@ function About() {
         </p>
 
         <h4 className="tech-title">Tecnologías que utilizo:</h4>
+
         <div className="tech-logos">
-          <img src={htmlIcon} alt="HTML" />
-          <img src={cssIcon} alt="CSS" />
-          <img src={jsIcon} alt="JavaScript" />
-          <img src={reactIcon} alt="React" />
-          <img src={nodeIcon} alt="Node.js" />
-          <img src={mongoIcon} alt="MongoDB" />
-          <img src={mysqlIcon} alt="MySQL" />
-          <img src={awsIcon} alt="AWS" />
-          <img src={andIcon} alt="ANDROID" />
-          <img src={apaIcon} alt="APACHE" />
-          <img src={figIcon} alt="FIGMA" />
-          <img src={bootIcon} alt="BOOTSTRAP" />
-          <img src={gitIcon} alt="GITHUB" />
-          <img src={javaIcon} alt="JAVA" />
-          <img src={pycon} alt="PYTHON" />
-          <img src={spinIcon} alt="SPRIN-BOOT" />
-          <img src={vscIcon} alt="VSC" />
-          <img src={wpIcon} alt="WORD-PRESS" />
+          <Icon src={htmlIcon} alt="HTML" name="HTML" />
+          <Icon src={cssIcon} alt="CSS" name="CSS" />
+          <Icon src={jsIcon} alt="JavaScript" name="JavaScript" />
+          <Icon src={reactIcon} alt="React" name="React" />
+          <Icon src={nodeIcon} alt="Node.js" name="Node.js" />
+          <Icon src={mongoIcon} alt="MongoDB" name="MongoDB" />
+          <Icon src={mysqlIcon} alt="MySQL" name="MySQL" />
+          <Icon src={awsIcon} alt="AWS" name="AWS" />
+          <Icon src={andIcon} alt="Android" name="Android" />
+          <Icon src={apaIcon} alt="Apache" name="Apache" />
+          <Icon src={figIcon} alt="Figma" name="Figma" />
+          <Icon src={bootIcon} alt="Bootstrap" name="Bootstrap" />
+          <Icon src={gitIcon} alt="GitHub" name="GitHub" />
+          <Icon src={javaIcon} alt="Java" name="Java" />
+          <Icon src={pycon} alt="Python" name="Python" />
+          <Icon src={spinIcon} alt="Spring Boot" name="Spring Boot" />
+          <Icon src={vscIcon} alt="VS Code" name="VS Code" />
+          <Icon src={wpIcon} alt="WordPress" name="WordPress" />
         </div>
       </div>
     </section>
@@ -60,4 +63,3 @@ function About() {
 }
 
 export default About;
-

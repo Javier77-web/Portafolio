@@ -1,94 +1,109 @@
-/* src/styles/sections/Projects.css */
+/* src/styles/molecules/ProjectCard.css */
 
-.projects-section {
-  padding: 4rem 2rem;
-  background-color: #0f0f0f;
-  color: white;
-  text-align: center;
-}
-
-.section-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  color: #00bcd4;
-  margin-bottom: 2rem;
-}
-
-.projects-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-/* estilos del project card dentro de Projects.css si no usas CSS molecular separado */
+/* tarjeta individual de proyecto */
 .project-card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1a1a1a; /* fondo gris oscuro para destacar en negro */
+  border-radius: 12px; /* bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* sombra sutil */
+  overflow: hidden; /* recortar contenido que se salga */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animaciones suaves */
+  display: flex; /* usar flexbox para estructura */
+  flex-direction: column; /* apilar elementos vertical */
 }
 
+/* efecto hover al pasar el mouse */
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.4);
+  transform: translateY(-8px); /* levantar tarjeta */
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.6); /* sombra azul más intensa */
 }
 
+/* imagen del proyecto */
 .project-card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* imagen ocupa todo el ancho */
+  height: 200px; /* alto fijo */
+  object-fit: cover; /* recortar para cubrir sin distorsionar */
 }
 
+/* contenedor del contenido dentro de la tarjeta */
 .project-card-body {
-  padding: 1rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem; /* espacio interno */
+  flex: 1; /* que ocupe todo el espacio disponible */
+  display: flex; /* flexbox para ordenar */
+  flex-direction: column; /* vertical */
 }
 
+/* título del proyecto */
 .project-card-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #00bcd4;
+  font-size: 1.5rem; /* tamaño grande */
+  margin-bottom: 0.5rem; /* espacio abajo */
+  color: #00bcd4; /* mismo azul turquesa */
 }
 
+/* descripción del proyecto */
 .project-card-description {
-  flex: 1;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #ccc;
+  flex: 1; /* ocupar espacio restante */
+  font-size: 1rem; /* tamaño normal */
+  margin-bottom: 1rem; /* espacio abajo */
+  color: #ccc; /* texto gris claro */
 }
 
+/* contenedor para tecnologías usadas */
 .project-card-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  display: flex; /* flex para filas */
+  flex-wrap: wrap; /* que las tecnologías bajen a otra línea */
+  gap: 0.5rem; /* espacio entre items */
+  margin-bottom: 1rem; /* espacio abajo */
 }
 
+/* cada tecnología individual */
 .project-card-tech-item {
-  background-color: #00bcd4;
-  color: #000;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  border: 2px solid #00bcd4; /* azul base */
+  border-radius: 8px;
+  background: transparent;
+  color: #00bcd4;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+  z-index: 1;
 }
 
+.project-card-tech-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent
+  );
+  animation: glow 2s linear infinite;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+/* enlace para ver el proyecto */
 .project-card-link {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #00bcd4;
-  padding: 0.5rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-decoration: none; /* sin subrayado */
+  color: #fff; /* texto blanco */
+  background-color: #00bcd4; /* azul turquesa */
+  padding: 0.5rem; /* espacio interno */
+  border-radius: 5px; /* bordes redondeados */
+  transition: background-color 0.3s ease; /* transición suave */
+  text-align: center; /* centrar texto */
+  font-weight: 600; /* texto seminegrita */
+  display: block; /* que ocupe todo el ancho */
 }
 
+/* efecto hover para el enlace */
 .project-card-link:hover {
-  background-color: #0097a7;
+  background-color: #0097a7; /* azul más oscuro */
 }

@@ -1,0 +1,110 @@
+/* src/styles/molecules/NewsCard.css */
+
+/* contenedor principal de la tarjeta */
+.news-card {
+  background: linear-gradient(145deg, #1f1f1f, #121212);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.15);
+  overflow: hidden;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* efecto al pasar el mouse */
+.news-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 188, 212, 0.35);
+}
+
+/* imagen con bordes superiores redondeados y objeto cubre */
+.news-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+/* zoom suave de imagen al hover en la tarjeta */
+.news-card:hover .news-card-image {
+  transform: scale(1.08);
+}
+
+/* cuerpo de la tarjeta */
+.news-card-body {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* título con fuente grande y negrita */
+.news-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00bcd4;
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  user-select: text;
+}
+
+/* fecha en texto más pequeño y gris suave */
+.news-card-date {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  font-style: italic;
+  user-select: text;
+}
+
+/* descripción con color claro y altura de línea cómoda */
+.news-card-description {
+  font-size: 1rem;
+  color: #ccc;
+  flex-grow: 1;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  user-select: text;
+}
+
+/* enlace que se ve como botón, con colores degradados */
+.news-card-link {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #00bcd4, #005f73);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+/* cambio de color y sombra al pasar el mouse por el enlace */
+.news-card-link:hover {
+  background: linear-gradient(135deg, #008ba3, #004f57);
+  box-shadow: 0 6px 18px rgba(0, 188, 212, 0.7);
+}
+
+/* responsividad: que la tarjeta se adapte en pantallas pequeñas */
+@media (max-width: 480px) {
+  .news-card {
+    width: 100%;
+  }
+
+  .news-card-title {
+    font-size: 1.3rem;
+  }
+
+  .news-card-description {
+    font-size: 0.95rem;
+  }
+}

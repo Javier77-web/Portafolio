@@ -1,14 +1,14 @@
 // src/components/sections/News.jsx
 import React, { useEffect, useState } from 'react';
-import '../../styles/sections/News.css'; // crea un archivo para los estilos
-import noticiasData from '../../data/news.json'; // ajusta el path si lo tienes en otro lado
+import NewsCard from '../molecules/NewsCard';
+import '../../styles/sections/News.css';
+import newsData from '../../data/news.json';
 
 function News() {
-  const [noticias, setNoticias] = useState([]);
+  const [news, setNews] = useState([]);
 
   useEffect(() => {
-    // cargamos las noticias desde el JSON
-    setNoticias(noticiasData);
+    setNews(newsData);
   }, []);
 
   return (
@@ -16,12 +16,15 @@ function News() {
       <div className="section-container">
         <h2 className="section-title">Noticias</h2>
         <div className="news-grid">
-          {noticias.map((noticia, index) => (
-            <div key={index} className="news-card">
-              <h3 className="news-title">{noticia.titulo}</h3>
-              <p className="news-date">{noticia.fecha}</p>
-              <p className="news-content">{noticia.contenido}</p>
-            </div>
+          {news.map((item) => (
+            <NewsCard
+              key={item.id}
+              titulo={item.titulo}
+              descripcion={item.descripcion}
+              fecha={item.fecha}
+              imagen={item.imagen}
+              enlace={item.enlace}
+            />
           ))}
         </div>
       </div>

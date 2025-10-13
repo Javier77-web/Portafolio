@@ -50,10 +50,10 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.parrafo {
-    font-size: 1.5rem;
-}
 
+.parrafo {
+  font-size: 1.5rem;
+}
 
 /* contenedor de imagen */
 .home-image-container {
@@ -61,18 +61,14 @@
   text-align: center;
 }
 
-
 .home-image {
   width: auto;            /* ancho natural */
   max-width: 300px;       /* evita que sea muy grande */
   height: auto;           /* alto automático, mantiene proporción */
-  border-radius: 0;            /* sin bordes redondeados */
+  border-radius: 0;       /* sin bordes redondeados */
   background-color: transparent; /* fondo transparente */
   filter: drop-shadow(0 0 10px #00bcd4); /* sombra suave que sigue la forma visible */
 }
-
-
-
 
 /* responsive para tablets y móviles */
 @media (max-width: 768px) {
@@ -111,5 +107,115 @@
   .home-image {
     width: 150px;
     height: 150px;
+  }
+}
+
+/* ============================
+   NUEVOS ESTILOS: botón y redes
+   ============================ */
+
+/* contenedor para contacto y redes */
+.contact-section-home {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.2rem;
+}
+
+/* botón principal contáctame */
+.btn-contact-me {
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  color: white;
+  font-weight: 700;
+  padding: 0.8rem 2.5rem;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* animación brillo para el botón */
+.btn-contact-me::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: linear-gradient(60deg, transparent, rgba(255,255,255,0.6), transparent);
+  transform: rotate(25deg);
+  animation: shine 3s linear infinite;
+  pointer-events: none;
+  opacity: 0.75;
+  filter: blur(6px);
+}
+
+/* hover */
+.btn-contact-me:hover {
+  background-color: #008b9a;
+  box-shadow: 0 6px 18px rgba(0, 188, 212, 0.9);
+}
+
+/* contenedor de botones sociales */
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* estilos comunes para los botones sociales */
+.social-btn {
+  color: white;
+  font-size: 1.8rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(0, 188, 212, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+/* efecto hover con sombra y movimiento */
+.social-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 188, 212, 0.9);
+}
+
+/* colores personalizados por red */
+.social-btn.github {
+  background-color: #333;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-btn.whatsapp {
+  background-color: #25d366;
+}
+
+/* iconos fontawesome centrados */
+.social-btn i {
+  pointer-events: none; /* para que el click no interfiera */
+}
+
+/* keyframes para brillo (reutilizado) */
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
   }
 }

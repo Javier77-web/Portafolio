@@ -23,7 +23,7 @@ function Projects() {
           titulo={project.titulo}
           descripcion={project.descripcion}
           tecnologias={project.tecnologias}
-          imagen={`/assets/${project.imagen}`} // ✅ CORRECTO
+          imagen={project.imagen} 
           enlace={project.enlace}
           />
           ))}

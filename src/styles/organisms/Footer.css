@@ -1,0 +1,103 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* contenedor principal flex */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* logo a la izquierda */
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00bcd4;
+  user-select: none;
+}
+
+/* menu centrado */
+.footer-nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.footer-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-menu li a:hover {
+  color: #00bcd4;
+}
+
+/* redes sociales a la derecha */
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-social-link {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #00bcd4;
+}
+
+/* copyright centrado abajo */
+.footer-copy {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin: 0;
+}
+
+/* responsive - móvil */
+@media (max-width: 768px) {
+  .footer-content {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer-logo,
+  .footer-socials {
+    order: 2;
+  }
+
+  .footer-nav {
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .footer-menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
