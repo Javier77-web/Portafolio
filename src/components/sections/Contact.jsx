@@ -1,6 +1,5 @@
-// src/components/sections/Contact.jsx
-
 import React from 'react';
+import Input from '../atoms/Input';
 import '../../styles/sections/Contact.css';
 
 function Contact() {
@@ -10,17 +9,35 @@ function Contact() {
       <form className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required />
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Escribe tu nombre..."
+            required
+          />
         </div>
 
         <div className="form-group">
           <label htmlFor="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+          <Input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@ejemplo.com"
+            required
+          />
         </div>
 
         <div className="form-group">
           <label htmlFor="message">Mensaje</label>
-          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Escribe tu mensaje..."
+            required
+          ></textarea>
         </div>
 
         <button type="submit" className="contact-button">Enviar</button>
@@ -30,3 +47,4 @@ function Contact() {
 }
 
 export default Contact;
+

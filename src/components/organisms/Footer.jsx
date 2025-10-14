@@ -4,12 +4,12 @@ import '../../styles/organisms/Footer.css';
 const socialLinks = [
   {
     name: 'WhatsApp',
-    url: 'https://wa.me/tuNumero',
+    url: 'https://wa.me/56961416723',
     iconClass: 'fab fa-whatsapp',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/tuPerfil',
+    url: 'https://www.linkedin.com/in/javier-nilo-a0b140310/',
     iconClass: 'fab fa-linkedin-in',
   },
   {
@@ -26,12 +26,12 @@ function Footer() {
         {/* contenedor flex principal */}
         <div className="footer-content">
           {/* logo izquierda */}
-          <div className="footer-logo">DEVELOPPER</div>
+          <div className="footer-logo">DEVELOPER</div>
 
           {/* menu centrado */}
           <nav className="footer-nav">
             <ul className="footer-menu">
-              <li><a href="#home">Inicio</a></li>
+              <li><a href="#">Inicio</a></li>
               <li><a href="#about">Acerca de mí</a></li>
               <li><a href="#projects">Proyectos</a></li>
               <li><a href="#news">Noticias</a></li>

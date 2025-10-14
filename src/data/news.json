@@ -1,17 +1,19 @@
 
 [
   {
+    "id": 1,
     "titulo": "data centers para instalar en Chile",
-    "fecha": "2023-10-01",
+    "fecha": "07-05-2025",
     "descripcion": "Lanzamiento de nuevo framework.",
-    "imagen": "news/n1.jpg",
+    "imagen": "news/n1.webp",
     "enlace": "https://www.emol.com/noticias/Economia/2025/05/07/1165642/amazon-us4000-millones-data-centers.html"
   },
   {
+    "id": 2,
     "titulo": " los cargos más demandados en Chile durante el 2024",
-    "fecha": "2023-10-05",
+    "fecha": "08-01-2025",
     "descripcion": "Actualización en React 18.",
-    "imagen": "news/n2.jpg",
+    "imagen": "news/n2.webp",
     "enlace": "https://www.adnradio.cl/2025/01/08/trabajarias-en-ia-estos-fueron-los-cargos-mas-demandados-en-chile-durante-el-2024/"
   }
 ]

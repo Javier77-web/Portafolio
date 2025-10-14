@@ -1,7 +1,7 @@
 /* src/styles/sections/News.css */
 .news-section {
   padding: 60px 20px;
-  background-color: #121212;
+  background-color: transparent;
   color: white;
   min-height: 100vh;
 }

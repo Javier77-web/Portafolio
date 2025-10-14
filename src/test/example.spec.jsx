@@ -1,0 +1,6 @@
+// example.spec.jsx
+describe("Sanity test", () => {
+ it("runs a simple truthy test", () => {
+   expect(true).toBe(true);
+ });
+});

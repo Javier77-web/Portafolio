@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../styles/atoms/Buttongit.css';
 
 function Buttongit() {

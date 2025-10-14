@@ -4,15 +4,15 @@
     "titulo": "Fundacion Apoyo",
     "descripcion": "Pagina web para gestionar y administra una fundacionde adutltos mayores",
     "tecnologias": ["html", "css","js"],
-    "imagen": "projects/pro1.jpg",
+    "imagen": "projects/pro1.webp",
     "enlace": "https://github.com/Javier77-web/Fundacion"
   },
   {
     "id": 2,
     "titulo": "TeloConvierto",
     "descripcion": "api para gestion de una aplicacion la cual es un convertidor de archivos",
-    "tecnologias": ["sprin boot", "java","xamp","mysql","postman"],
-    "imagen": "projects/pro1.jpg",
+    "tecnologias": ["spring boot", "java","xamp","mysql","postman"],
+    "imagen": "projects/pro2.webp",
     "enlace": "https://github.com/Javier77-web/EVA2"
   },
   {
@@ -20,7 +20,7 @@
     "titulo": "MonsterTeka",
     "descripcion": "Sitio de e‑commerce",
     "tecnologias": ["html", "css", "js"],
-    "imagen": "projects/pro1.jpg",
+    "imagen": "projects/pro3.webp",
     "enlace": "https://github.com/Javier77-web/full2"
   }
 ]

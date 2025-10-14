@@ -17,13 +17,13 @@ function Home1() {
               <div className="contact-section-home">
               <a href="#contact" className="btn-contact-me">Contáctame</a>
                 <div className="social-buttons">
-                  <a href="https://github.com/tuusuario" target="_blank" rel="noreferrer" aria-label="GitHub" className="social-btn github">
+                  <a href="https://github.com/Javier77-web" target="_blank" rel="noreferrer" aria-label="GitHub" className="social-btn github">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-btn linkedin">
+                  <a href="https://www.linkedin.com/in/javier-nilo-a0b140310/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-btn linkedin">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                  <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="social-btn whatsapp">
+                  <a href="https://wa.me/56961416723" target="_blank" rel="noreferrer" aria-label="WhatsApp" className="social-btn whatsapp">
                     <i className="fab fa-whatsapp"></i>
                   </a>
                 </div>

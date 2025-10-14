@@ -2,27 +2,27 @@
 
 import React from 'react';
 import '../../styles/sections/About.css'; // estilos globales de la sección
-import Icon from '../atoms/icons';
+import Icon from '../atoms/Icons';
 
 // importar íconos desde assets
-import htmlIcon from '../../assets/icons/htm.png';
-import cssIcon from '../../assets/icons/css.png';
-import jsIcon from '../../assets/icons/js.png';
-import reactIcon from '../../assets/icons/react.png';
-import nodeIcon from '../../assets/icons/node.png';
-import mongoIcon from '../../assets/icons/postgr.png';
-import mysqlIcon from '../../assets/icons/mysql.png';
-import awsIcon from '../../assets/icons/aws.png';
-import andIcon from '../../assets/icons/andro.png';
-import apaIcon from '../../assets/icons/apa.png';
-import figIcon from '../../assets/icons/fig.png';
-import bootIcon from '../../assets/icons/boot.png';
-import gitIcon from '../../assets/icons/git.png';
-import javaIcon from '../../assets/icons/java.png';
-import pycon from '../../assets/icons/py.png';
-import spinIcon from '../../assets/icons/spring.png';
-import vscIcon from '../../assets/icons/vsc.png';
-import wpIcon from '../../assets/icons/word.png';
+import htmlIcon from '../../assets/icons/htm.webp';
+import cssIcon from '../../assets/icons/css.webp';
+import jsIcon from '../../assets/icons/js.webp';
+import reactIcon from '../../assets/icons/react.webp';
+import nodeIcon from '../../assets/icons/node.webp';
+import postIcon from '../../assets/icons/postgr.webp';
+import mysqlIcon from '../../assets/icons/mysql.webp';
+import awsIcon from '../../assets/icons/aws.webp';
+import andIcon from '../../assets/icons/andro.webp';
+import apaIcon from '../../assets/icons/apa.webp';
+import figIcon from '../../assets/icons/fig.webp';
+import bootIcon from '../../assets/icons/boot.webp';
+import gitIcon from '../../assets/icons/git.webp';
+import javaIcon from '../../assets/icons/java.webp';
+import pycon from '../../assets/icons/py.webp';
+import spinIcon from '../../assets/icons/spring.webp';
+import vscIcon from '../../assets/icons/vsc.webp';
+import wpIcon from '../../assets/icons/word.webp';
 
 function About() {
   return (
@@ -43,7 +43,7 @@ function About() {
           <Icon src={jsIcon} alt="JavaScript" name="JavaScript" />
           <Icon src={reactIcon} alt="React" name="React" />
           <Icon src={nodeIcon} alt="Node.js" name="Node.js" />
-          <Icon src={mongoIcon} alt="MongoDB" name="MongoDB" />
+          <Icon src={postIcon} alt="Postgret" name="Postgret" />
           <Icon src={mysqlIcon} alt="MySQL" name="MySQL" />
           <Icon src={awsIcon} alt="AWS" name="AWS" />
           <Icon src={andIcon} alt="Android" name="Android" />
