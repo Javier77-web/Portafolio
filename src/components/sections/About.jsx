@@ -1,6 +1,6 @@
 // src/components/sections/About.jsx
 import React from 'react';
-import Icons from '../atoms/Icons';
+import Icons from '../atoms/Icon';
 import '../../styles/sections/About.css'; // estilos globales de la sección
 
 // importar íconos desde assets
