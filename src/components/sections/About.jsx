@@ -1,8 +1,7 @@
 // src/components/sections/About.jsx
-
 import React from 'react';
-import '../../styles/sections/About.css'; // estilos globales de la sección
 import Icon from '../atoms/Icons';
+import '../../styles/sections/About.css'; // estilos globales de la sección
 
 // importar íconos desde assets
 import htmlIcon from '../../assets/icons/htm.webp';

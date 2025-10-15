@@ -41,13 +41,17 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #00bcd4;
+  white-space: nowrap; /* evitar que nombre y apellido se separen */
 }
 
-/* apellido con color diferente */
+/* apellido con color diferente 
+hereda = inherit
+*/
+
 .apellido {
   color: #00bcd4;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: inherit; 
+  font-weight: inherit;
   margin-bottom: 0.5rem;
 }
 
@@ -110,10 +114,8 @@
   }
 }
 
-/* ============================
+/* 
    NUEVOS ESTILOS: botón y redes
-   ============================ */
-
 /* contenedor para contacto y redes */
 .contact-section-home {
   margin-top: 1.5rem;

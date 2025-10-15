@@ -9,6 +9,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* animaciones suaves */
   display: flex; /* usar flexbox para estructura */
   flex-direction: column; /* apilar elementos vertical */
+  width: 100%;           /* para que tome el 100% del contenedor padre */
+  max-width: 100%;       /* para evitar que se pase */
+  box-sizing: border-box; /* importante para que padding no expanda ancho */
 }
 
 /* efecto hover al pasar el mouse */
@@ -92,6 +95,10 @@
 
 /* enlace para ver el proyecto */
 .project-card-link {
+  display: block;           /* para que ocupe toda la línea */
+  width: 100%;             /* que tome todo el ancho disponible */
+  box-sizing: border-box;  /* para que padding no haga overflow */
+  text-align: center;      /* centrar texto */
   text-decoration: none; /* sin subrayado */
   color: #fff; /* texto blanco */
   background-color: #00bcd4; /* azul turquesa */
@@ -107,3 +114,31 @@
 .project-card-link:hover {
   background-color: #0097a7; /* azul más oscuro */
 }
+
+@media (max-width: 320px) {
+  .project-card-image {
+    height: auto; /* más pequeña para que no domine la carta */
+    max-height: 150px; /* limita altura máxima */
+    width: 100%;
+    object-fit: contain; /* para que se vea completa */
+  }
+
+  .project-card-title {
+    font-size: 1.2rem;
+  }
+
+  .project-card-description {
+    font-size: 0.9rem;
+  }
+
+  .project-card-tech-item {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .project-card-link {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}
+
