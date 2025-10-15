@@ -1,16 +1,34 @@
-# React + Vite
+# Portafolio - realizado con react 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este repositorio contiene un conjunto de componentes React reutilizables ya que me guie por atom desing, 
+lo cual ncluye componentes junto con pruebas unitarias implementadas con Jasmine y ejecutadas mediante Karma.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
+- **Lenguaje**: Js
+- **Framework**: React
+- **Testing**: Jasmine, Karma
+- **Otras Dependencias**: Webpack, Babel, @testing-library/react, @testing-library/user-event
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
+Para configurar el proyecto localmente, sigue estos pasos:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ descargamos el poryecto en github
+ 
+ lo podriamos dejar en documentos
+ 
+ depsues en la termina ejecutamos los siguientes comandos
+ 
+ cd Document | para entar a la carpeta
+ 
+ dir | para ver archivos que hay
+ 
+ cd Portafolio | o el nombre del proyecto
+ 
+ una vez ahi
+ 
+ npm install
+ 
+ y luego npm run dev
+ 
+ o npm run test para ejecutar la spruebas unitarias
