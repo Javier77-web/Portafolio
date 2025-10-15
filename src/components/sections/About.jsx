@@ -1,6 +1,6 @@
 // src/components/sections/About.jsx
 import React from 'react';
-import Icon from '../../../src/components/atoms/Icons';
+import Icons from '../atoms/Icons';
 import '../../styles/sections/About.css'; // estilos globales de la sección
 
 // importar íconos desde assets
@@ -37,24 +37,24 @@ function About() {
         <h4 className="tech-title">Tecnologías que utilizo:</h4>
 
         <div className="tech-logos">
-          <Icon src={htmlIcon} alt="HTML" name="HTML" />
-          <Icon src={cssIcon} alt="CSS" name="CSS" />
-          <Icon src={jsIcon} alt="JavaScript" name="JavaScript" />
-          <Icon src={reactIcon} alt="React" name="React" />
-          <Icon src={nodeIcon} alt="Node.js" name="Node.js" />
-          <Icon src={postIcon} alt="Postgret" name="Postgret" />
-          <Icon src={mysqlIcon} alt="MySQL" name="MySQL" />
-          <Icon src={awsIcon} alt="AWS" name="AWS" />
-          <Icon src={andIcon} alt="Android" name="Android" />
-          <Icon src={apaIcon} alt="Apache" name="Apache" />
-          <Icon src={figIcon} alt="Figma" name="Figma" />
-          <Icon src={bootIcon} alt="Bootstrap" name="Bootstrap" />
-          <Icon src={gitIcon} alt="GitHub" name="GitHub" />
-          <Icon src={javaIcon} alt="Java" name="Java" />
-          <Icon src={pycon} alt="Python" name="Python" />
-          <Icon src={spinIcon} alt="Spring Boot" name="Spring Boot" />
-          <Icon src={vscIcon} alt="VS Code" name="VS Code" />
-          <Icon src={wpIcon} alt="WordPress" name="WordPress" />
+          <Icons src={htmlIcon} alt="HTML" name="HTML" />
+          <Icons src={cssIcon} alt="CSS" name="CSS" />
+          <Icons src={jsIcon} alt="JavaScript" name="JavaScript" />
+          <Icons src={reactIcon} alt="React" name="React" />
+          <Icons src={nodeIcon} alt="Node.js" name="Node.js" />
+          <Icons src={postIcon} alt="Postgret" name="Postgret" />
+          <Icons src={mysqlIcon} alt="MySQL" name="MySQL" />
+          <Icons src={awsIcon} alt="AWS" name="AWS" />
+          <Icons src={andIcon} alt="Android" name="Android" />
+          <Icons src={apaIcon} alt="Apache" name="Apache" />
+          <Icons src={figIcon} alt="Figma" name="Figma" />
+          <Icons src={bootIcon} alt="Bootstrap" name="Bootstrap" />
+          <Icons src={gitIcon} alt="GitHub" name="GitHub" />
+          <Icons src={javaIcon} alt="Java" name="Java" />
+          <Icons src={pycon} alt="Python" name="Python" />
+          <Icons src={spinIcon} alt="Spring Boot" name="Spring Boot" />
+          <Icons src={vscIcon} alt="VS Code" name="VS Code" />
+          <Icons src={wpIcon} alt="WordPress" name="WordPress" />
         </div>
       </div>
     </section>

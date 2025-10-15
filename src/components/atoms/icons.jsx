@@ -1,4 +1,4 @@
-// src/components/atoms/Icon.jsx
+// src/components/atoms/Icons.jsx
 import React from 'react';
 import '../../styles/atoms/icons.css';
 
